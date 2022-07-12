@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="img" href="./Imgs/">
+    <title>GoViagens</title>
+    <link rel="shortcut icon" href="./Imgs/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+   <div class="container-fluid topbar">
+    <a href="./Quemsomos.html">
+    <img src="./Imgs/logo.png" width="80px" height="80px" title="GoViagens" class="rounded-circle" alt="GoViagens">
+    </a>
+
+    <a href="./Contato.html" class="contact rounded">Contato</a>
+    <a href="./Promo.html" class="promo rounded">Promoções</a>
+    <a href="./Destino.html" title="Viajar" class="destinos rounded">Destinos</a>
+    <a href="./Quemsomos.html" title="Quem Somos" class="quemsomos rounded">Quem Somos</a>
+   </div>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./Imgs/rollmg2.jpg" alt="Imagem de capa do card" style="height:200px;">
+            <div class="card-body">
+              <h5 class="card-title">Turismo</h5>
+              <p class="card-text">Explore as novidades de cada lugar do mundo com o nosso serviço de turismo</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./Imgs/rollomg.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Relaxe</h5>
+              <p class="card-text">Relaxe! Deixe o estresse e a preocupação de lado, há muitas paisagens para olhar.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./Imgs/rollmg1.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Banho</h5>
+              <p class="card-text">Aproveite com a sua família em lagos incríveis.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="border-top:greenyellow;">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="border-top:greenyellow;">
+      <div class="carousel-item active">
+        <img class="d-block w-100 .img-fluid" src="./Imgs/slide1.jpg" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./Imgs/slide2.jpg" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./Imgs/slide3.jpg" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+</body>
+</html>
+
+
+<style>
+.nav{
+    background-color: rgb(209, 192, 192);
+    color: black;
+}
+.container-fluid{
+    background-color: rgb(32, 30, 30);
+    height: 90px;
+}
+.img1{
+ padding: 0ch;
+}
+.topbar{
+display:flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 2px solid greenyellow;
+}
+
+.contact, .promo, .destinos, .quemsomos{
+    color:white;
+    text-decoration: none;
+    border: double black 3px;
+    padding: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html, body{
+    background-color:rgb(32, 30, 30);
+}
+.card{
+    margin: 20px;
+}
+</style>
